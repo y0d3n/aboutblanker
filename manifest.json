@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "version": "1.0.0",
+    "name": "aboutblanker",
+    "description": "about:blankを開くだけ",
+    "permissions": [
+        "tabs",
+        "commands"
+    ],
+    "commands": {
+        "openBlankTab": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+5"
+            },
+            "description": "about:blankを開く"
+        }
+    },
+    "background": {
+        "service_worker": "main.js"
+    }
+}
